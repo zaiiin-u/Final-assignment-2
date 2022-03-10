@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <button class="start_quiz" id="start-quiz">Start Quiz</button>
+    <div id="quiz">
+      <div class="quiz_container hide" id="quiz-container">
+        <div class="quiz_question" id="quiz-question"></div>
+        <label class="options">
+          <input type="radio" value="1" /><span id="option-1"></span>
+        </label>
+        <label class="options">
+          <input type="radio" value="2" /><span id="option-2"></span>
+        </label>
+        <label class="options">
+          <input type="radio" value="3" /><span id="option-3"></span>
+        </label>
+        <label class="options">
+          <input type="radio" value="4" /><span id="option-4"></span>
+        </label>
+      </div>
+      <div class="next_button_container">
+        <button
+          class="btn_next"
+          id="btn-next"
+          onclick="displayNextQuestion();"
+          style="display: none"
+        >
+          Next
+        </button>
+      </div>
+      <div class="end_result" id="end-result" style="display: none"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
