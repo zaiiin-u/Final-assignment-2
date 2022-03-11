@@ -243,9 +243,9 @@ body {
   }
 
   .end_result {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    top: 35%;
+    left: 40%;
     font-size: 3.5rem;
     padding-top: 260px;
   }
