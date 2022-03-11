@@ -186,17 +186,9 @@ body {
 @media screen and (max-width: 900px) {
   .start_quiz {
     font-size: 1.4rem;
-    background: #833ab4;
-    background: -webkit-gradient(linear, left top, right top, from(#fcb045), color-stop(#fd1d1d), to(#833ab4));
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
     padding: 20px 60px;
-    border: none;
     border-radius: 4px;
     margin-top: 2rem;
-    cursor: pointer;
-    -webkit-transition: all 0.35s;
-    transition: all 0.35s;
-    outline: none;
     position: absolute;
     top: 35%;
     left: 36%;
@@ -243,25 +235,6 @@ body {
 }
 
 @media screen and (max-width: 428px) {
-  .navbar {
-    background: #131313;
-    height: 80px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 1.4rem;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    /*to make sure this thing is above everything*/
-  }
   .start_quiz {
     font-size: 1.4rem;
     position: absolute;
@@ -287,8 +260,8 @@ body {
   .btn_next {
     width: 80px;
     height: 35px;
-    font-size: 0.9rem;
-    padding: 10px 10px;
+    font-size: 1rem;
+    padding: 12px 15px;
     position: absolute;
     bottom: 4rem;
     right: 2rem;
@@ -305,7 +278,7 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     font-size: 3.5rem;
-    padding-top: 150px;
+    padding-top: 260px;
   }
 }
 /*# sourceMappingURL=style.css.map */
