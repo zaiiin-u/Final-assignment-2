@@ -44,8 +44,10 @@ var questions = [
 ];
 //assigning variables
 var score = 0;
+
 var current_question = 0;
 var answers = [];
+var ans_size;
 var num_of_questions = questions.length;
 var quiz = document.getElementById("quiz");
 var start_btn = document.getElementById("start-quiz");
@@ -56,6 +58,7 @@ var option2 = document.getElementById("option-2");
 var option3 = document.getElementById("option-3");
 var option4 = document.getElementById("option-4");
 var next_button = document.getElementById("btn-next");
+var previous_button = document.getElementById("btn-previous");
 var result = document.getElementById("end-result");
 var option_num = 0;
 // display Question
@@ -69,9 +72,7 @@ function displayQuestion(index) {
 }
 // To Display Next Question
 function displayNextQuestion() {
-  console.log("helllo");
   var option_selected = document.querySelector("input[type=radio]:checked");
-
   if (!option_selected) {
     if (next_button.textContent !== "ReStart") {
       next_button.disabled = true;
@@ -84,9 +85,10 @@ function displayNextQuestion() {
     next_button.style.opacity = 1;
   }
   var ans = option_selected.value;
+  answers.push(ans);
+  ans_size = answers.length - 1;
   if (questions[current_question].correctAnswer == ans) {
     score++;
-    answers.push(questions[current_question].correctAnswer);
   }
 
   option_selected.checked = false;
@@ -103,10 +105,10 @@ function displayNextQuestion() {
 //To Show Score
 function showResult() {
   container.classList.add("hide");
+  previous_button.classList.toggle("hide_pre_btn");
   result.style.display = "";
   result.textContent = `Score: ${score}/${num_of_questions}`;
   next_button.textContent = "ReStart";
-
   next_button.addEventListener("click", function () {
     quiz.innerHTML = "";
     start_btn.classList.toggle("hide_start_btn");
@@ -119,5 +121,20 @@ start_btn.addEventListener("click", function () {
   start_btn.classList.toggle("hide_start_btn");
   container.classList.remove("hide");
   next_button.style.display = "";
+  previous_button.classList.toggle("hide_pre_btn");
   displayQuestion(current_question);
 });
+
+function displayPreviousQuestion() {
+  console.log(answers);
+  if (current_question != num_of_questions - 1) {
+    next_button.textContent = "Next";
+  }
+  current_question--;
+  displayQuestion(current_question);
+  document.getElementById(`_${answers[ans_size]}`).checked = true;
+  ans_size--;
+  if (current_question == num_of_questions - 1) {
+    next_button.textContent = "Submit";
+  }
+}

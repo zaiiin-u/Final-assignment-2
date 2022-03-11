@@ -55,6 +55,9 @@ body {
 .hide {
   display: none;
 }
+.hide_pre_btn {
+  display: none;
+}
 .quiz_container {
   height: 330px;
   width: 1000px;
@@ -115,6 +118,30 @@ body {
   bottom: 3rem;
   right: 5rem;
   float: right;
+}
+.btn_next:hover {
+  background: #e71ecc;
+  color: #f6f6f6;
+}
+
+.btn_previous {
+  width: 120px;
+  height: 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: #833ab4;
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  padding: 10px 20px;
+  border: none;
+  opacity: 1;
+  border-radius: 20px;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: all 0.35s;
+  outline: none;
+  position: absolute;
+  bottom: 3rem;
+  left: 5rem;
 }
 .btn_next:hover {
   background: #e71ecc;
@@ -250,7 +277,16 @@ body {
     right: 2rem;
     margin: 15px;
   }
-
+  .btn_previous {
+    width: 80px;
+    height: 35px;
+    font-size: 0.9rem;
+    padding: 10px 10px;
+    position: absolute;
+    bottom: 5rem;
+    left: 2rem;
+    margin: 15px;
+  }
   .end_result {
     font-size: 4rem;
     position: absolute;
