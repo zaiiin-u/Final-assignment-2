@@ -7,7 +7,7 @@ body {
   background: #131313;
   height: 80px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   font-size: 1.4rem;
   padding: 0 50px;
@@ -212,6 +212,11 @@ body {
   }
 }
 @media screen and (max-width: 428px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .start_quiz {
     font-size: 1.4rem;
     position: absolute;
