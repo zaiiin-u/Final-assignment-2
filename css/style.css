@@ -276,21 +276,18 @@ body {
     top: 40%;
     left: 18%;
   }
-  #navbar__logo {
-    background: #833ab4;
-    background: -webkit-gradient(linear, left top, right top, from(#fcb045), color-stop(#fd1d1d), to(#833ab4));
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-    position: absolute;
-    top: 30%;
-    left: 16%;
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 999;
+    /*to make sure this thing is above everything*/
   }
 }
 /*# sourceMappingURL=style.css.map */

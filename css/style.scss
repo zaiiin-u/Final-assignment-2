@@ -256,19 +256,11 @@ body {
     top: 40%;
     left: 18%;
   }
-  #navbar__logo {
-    background: #833ab4;
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-    position: absolute;
-    top: 30%;
-    left: 16%;
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /*to make sure this thing is above everything*/
   }
 }
