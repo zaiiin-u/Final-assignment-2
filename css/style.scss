@@ -148,7 +148,10 @@ body {
   background: #b18baf;
   color: #f6f6f6;
 }
-
+.btn_previous:hover {
+  background: #b18baf;
+  color: #f6f6f6;
+}
 .end_result {
   background: #1facb6;
   background: linear-gradient(to right, #4cc0c9, #1facb6);
@@ -230,7 +233,16 @@ body {
     right: 3rem;
     margin: 10px;
   }
-
+  .btn_previous {
+    width: 100px;
+    height: 35px;
+    font-size: 1rem;
+    padding: 10px 18px;
+    position: absolute;
+    bottom: 2rem;
+    left: 3rem;
+    margin: 10px;
+  }
   .end_result {
     font-size: 3.5rem;
     position: absolute;
