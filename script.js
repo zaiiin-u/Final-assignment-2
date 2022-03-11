@@ -45,6 +45,7 @@ var questions = [
 //assigning variables
 var score = 0;
 var current_question = 0;
+var answers = [];
 var num_of_questions = questions.length;
 var quiz = document.getElementById("quiz");
 var start_btn = document.getElementById("start-quiz");
@@ -70,17 +71,24 @@ function displayQuestion(index) {
 function displayNextQuestion() {
   console.log("helllo");
   var option_selected = document.querySelector("input[type=radio]:checked");
+
   if (!option_selected) {
     if (next_button.textContent !== "ReStart") {
       next_button.disabled = true;
       alert("Select your Answer");
+      next_button.style.opacity = 0.3;
     }
   }
   next_button.disabled = false;
+  if (option_selected) {
+    next_button.style.opacity = 1;
+  }
   var ans = option_selected.value;
   if (questions[current_question].correctAnswer == ans) {
     score++;
+    answers.push(questions[current_question].correctAnswer);
   }
+
   option_selected.checked = false;
   current_question++;
   if (current_question == num_of_questions - 1) {
