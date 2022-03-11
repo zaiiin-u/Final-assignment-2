@@ -45,7 +45,7 @@ var questions = [
 //assigning variables
 var score = 0;
 var current_question = 0;
-var num_of_questions = 5;
+var num_of_questions = questions.length;
 var quiz = document.getElementById("quiz");
 var start_btn = document.getElementById("start-quiz");
 var container = document.getElementById("quiz-container");
@@ -56,7 +56,7 @@ var option3 = document.getElementById("option-3");
 var option4 = document.getElementById("option-4");
 var next_button = document.getElementById("btn-next");
 var result = document.getElementById("end-result");
-
+var option_num = 0;
 // display Question
 function displayQuestion(index) {
   var quest = questions[index];

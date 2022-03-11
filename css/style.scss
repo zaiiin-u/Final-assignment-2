@@ -1,6 +1,34 @@
 body {
   font-family: "Roboto Slab", serif;
-  background: black;
+  background: #000000;
+  background: linear-gradient(to right, #161616, #000000);
+}
+.navbar {
+  background: #131313;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  padding: 0 50px;
+  position: sticky;
+  top: 0;
+  z-index: 999; /*to make sure this thing is above everything*/
+}
+
+#navbar__logo {
+  background: #833ab4;
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
 }
 .start_quiz {
   font-size: 1.8rem;
