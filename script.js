@@ -72,6 +72,7 @@ function displayQuestion(index) {
 }
 // To Display Next Question
 function displayNextQuestion() {
+  previous_button.classList.remove("hide_pre_btn");
   var option_selected = document.querySelector("input[type=radio]:checked");
   if (!option_selected) {
     if (next_button.textContent !== "ReStart") {
@@ -121,9 +122,10 @@ start_btn.addEventListener("click", function () {
   start_btn.classList.toggle("hide_start_btn");
   container.classList.remove("hide");
   next_button.style.display = "";
-  previous_button.classList.toggle("hide_pre_btn");
+
   displayQuestion(current_question);
 });
+//To display previous question
 
 function displayPreviousQuestion() {
   console.log(answers);

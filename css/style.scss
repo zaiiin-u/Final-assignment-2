@@ -1,10 +1,11 @@
 body {
   font-family: "Roboto Slab", serif;
-  background: #000000;
-  background: linear-gradient(to right, #161616, #000000);
+  background: #fff;
+  background: linear-gradient(to right, #fff);
 }
 .navbar {
-  background: #131313;
+  background: #1facb6;
+  background: linear-gradient(to right, #4cc0c9, #1facb6);
   height: 80px;
   display: flex;
   justify-content: flex-start;
@@ -17,8 +18,8 @@ body {
 }
 
 #navbar__logo {
-  background: #833ab4;
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: #050505;
+  background: linear-gradient(to right, #494b4b, #070707);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -39,8 +40,8 @@ body {
 .start_quiz {
   height: 80px;
   font-size: 1.8rem;
-  background: #833ab4;
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: #1facb6;
+  background: linear-gradient(to right, #4cc0c9, #1facb6);
   padding: 20px 60px;
   border: none;
   border-radius: 4px;
@@ -62,12 +63,8 @@ body {
   height: 330px;
   width: 1000px;
   position: absolute;
-  background-image: linear-gradient(
-    to right,
-    #fcb045 0%,
-    #fd1d1d 40%,
-    #833ab4 100%
-  );
+  background: #1facb6;
+  background: linear-gradient(to right, #4cc0c9, #1facb6);
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
@@ -78,7 +75,7 @@ body {
 .quiz_question {
   padding: 20px;
   font-size: 22px;
-  background: #e71ecc;
+  background: white;
   border-radius: 20px;
   margin: 10px 0 10px 0;
   color: #000000;
@@ -94,9 +91,13 @@ body {
   color: #000000;
   border-radius: 20px;
 }
+.start_quiz:hover {
+  background: #b18baf;
+  color: #f6f6f6;
+}
 
 .options:hover {
-  background: #e71ecc;
+  background: #b18baf;
   color: #f6f6f6;
 }
 .btn_next {
@@ -104,8 +105,8 @@ body {
   height: 40px;
   font-size: 1.2rem;
   font-weight: bold;
-  background: #833ab4;
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: #1facb6;
+  background: linear-gradient(to right, #4cc0c9, #1facb6);
   padding: 10px 20px;
   border: none;
   opacity: 1;
@@ -120,7 +121,7 @@ body {
   float: right;
 }
 .btn_next:hover {
-  background: #e71ecc;
+  background: #b18baf;
   color: #f6f6f6;
 }
 
@@ -129,8 +130,8 @@ body {
   height: 40px;
   font-size: 1.2rem;
   font-weight: bold;
-  background: #833ab4;
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: #1facb6;
+  background: linear-gradient(to right, #4cc0c9, #1facb6);
   padding: 10px 20px;
   border: none;
   opacity: 1;
@@ -144,18 +145,14 @@ body {
   left: 5rem;
 }
 .btn_next:hover {
-  background: #e71ecc;
+  background: #b18baf;
   color: #f6f6f6;
 }
 
 .end_result {
-  background-color: #833ab4;
-  background-image: linear-gradient(
-    to right,
-    #fcb045 0%,
-    #fd1d1d 40%,
-    #833ab4 100%
-  );
+  background: #1facb6;
+  background: linear-gradient(to right, #4cc0c9, #1facb6);
+  background-image: linear-gradient(to right, #4cc0c9 0%, #1facb6 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
